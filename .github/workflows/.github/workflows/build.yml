@@ -20,7 +20,7 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
-      - name: Install dependencies
+      - name: Install dependencies with npm
         run: npm install --legacy-peer-deps
 
       - name: Build APK
